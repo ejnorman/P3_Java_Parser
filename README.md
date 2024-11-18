@@ -21,8 +21,8 @@ Create a UML class diagram of the project. Because our projects are not large in
 ### Part 2: Java Implementation
 Packages, Interfaces and Classes
 * Tree
-    * TreeInterface 
-    * SearchTreeInterface 
+    * TreeInterface
+    * SearchTreeInterface
     * BinaryTreeInterface
     * TreeIteratorInterface
     * BinaryTree
@@ -36,7 +36,7 @@ Packages, Interfaces and Classes
 
 You will need two additional files:
 1. reservedWords.txt
-2. Palindrome.java
+2. all.Palindrome.java
 
 The former is the reserved keywords you will check for. The latter is the Java program you will parse.
 
@@ -74,7 +74,7 @@ Most of these should be in the code implemented in class.
 ## Testing
 You will be writing unit tests and will be required to have at least 80% method code coverage for all tests. You can create your unit tests for
 
-* Palindrome
+* all.Palindrome
 * Parser
 * **BinaryNode**
 * **BinarySearchTree**
@@ -82,11 +82,11 @@ You will be writing unit tests and will be required to have at least 80% method 
 
 and it will cover most of the rest from there.
 
-The classes above in **bold** have private methods that will not allow you to put the testing files into a test root directory outside of its package. It's okay to leave them in the same package: TreePackage.
+The classes above in **bold** have private methods that will not allow you to put the testing files into a test root directory outside of its package. It's okay to leave them in the same package: all.TreePackage.
 
 The unit testing on this project is not trivial. Start early.
 
-You can run all tests by right-clicking on your test folder -> More Run/Debug -> Run 'All Tests' with Coverage. You can see where your total method coverage is under the all package at the top. See screenshot below. This would be an acceptable coverage. 
+You can run all tests by right-clicking on your test folder -> More Run/Debug -> Run 'All Tests' with Coverage. You can see where your total method coverage is under the all package at the top. See screenshot below. This would be an acceptable coverage.
 
 ![image demonstrating code coverage](img/P3_CodeCoverageParser.png)
 
