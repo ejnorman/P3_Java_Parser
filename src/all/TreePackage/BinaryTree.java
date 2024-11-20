@@ -110,7 +110,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         root = rootNode;
     } // end setRootNode
 
-    protected BinaryNode<T> getRootNode()
+    public BinaryNode<T> getRootNode()
     {
         return root;
     } // end getRootNode
@@ -253,11 +253,6 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 
             return nextNode.getData();
         } // end next
-
-        public void remove()
-        {
-            throw new UnsupportedOperationException();
-        } // end remove
     } // end PreorderIterator
 
     private class PostorderIterator implements Iterator<T>
@@ -320,11 +315,6 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 
             return nextNode.getData();
         } // end next
-
-        public void remove()
-        {
-            throw new UnsupportedOperationException();
-        } // end remove
     } // end PostorderIterator
 
     private class InorderIterator implements Iterator<T>
@@ -367,11 +357,6 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 
             return nextNode.getData();
         } // end next
-
-        public void remove()
-        {
-            throw new UnsupportedOperationException();
-        } // end remove
     } // end InorderIterator
 
     private class LevelOrderIterator implements Iterator<T>
@@ -414,11 +399,6 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
 
             return nextNode.getData();
         } // end next
-
-        public void remove()
-        {
-            throw new UnsupportedOperationException();
-        } // end remove
     } // end LevelOrderIterator
 } // end BinaryTree
 
