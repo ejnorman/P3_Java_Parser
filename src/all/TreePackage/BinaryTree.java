@@ -184,6 +184,35 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
         } // end while
     } // end iterativeInorderTraverse
 
+    //This is for testing
+    public String iterativeInorderTraverseString()
+    {
+        StackInterface<BinaryNode<T>> nodeStack = new LinkedStack<>();
+        BinaryNode<T> currentNode = root;
+        String inorder = "";
+
+        while (!nodeStack.isEmpty() || (currentNode != null))
+        {
+            // Find leftmost node with no left child
+            while (currentNode != null)
+            {
+                nodeStack.push(currentNode);
+                currentNode = currentNode.getLeftChild();
+            } // end while
+
+            // Visit leftmost node, then traverse its right subtree
+            if (!nodeStack.isEmpty())
+            {
+                BinaryNode<T> nextNode = nodeStack.pop();
+                // Assertion: nextNode != null, since nodeStack was not empty
+                // before the pop
+                inorder += nextNode.getData() + " ";
+                currentNode = nextNode.getRightChild();
+            } // end if
+        } // end while
+        return inorder;
+    } // end iterativeInorderTraverse
+
     private class PreorderIterator implements Iterator<T>
     {
         private StackInterface<BinaryNode<T>> nodeStack;
